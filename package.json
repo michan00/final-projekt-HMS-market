@@ -1,0 +1,32 @@
+{
+  "name": "final-projekt-HMS-market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "argon2": "^0.30.1",
+    "connect-session-sequelize": "^7.1.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michan00/final-projekt-HMS-market.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michan00/final-projekt-HMS-market/issues"
+  },
+  "homepage": "https://github.com/michan00/final-projekt-HMS-market#readme"
+}
