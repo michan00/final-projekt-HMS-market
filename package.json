@@ -1,5 +1,6 @@
 {
-  "name": "final-projekt-HMS-market",
+  "name": "final-project-HMS-market",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

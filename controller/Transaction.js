@@ -47,8 +47,6 @@ export const createTransaction = async(req, res)=>{
             note: note,
             order:order,
             userId: req.userId,
-            product: req.productId
-            
         });
         res.status(201).json({msg:"Tansaction Success"});
     } catch (error) {
@@ -60,7 +58,7 @@ export const createTransaction = async(req, res)=>{
 export const updateTransaction = async(req, res)=>{
     const transaction = await Transactions.findOne({
         where: {
-            id: req.params.id
+            uuid: req.params.id
         }
     });
     if(!transaction) return res.status(404).json({msg:"No Transaction Found"});
@@ -73,7 +71,7 @@ export const updateTransaction = async(req, res)=>{
             order: order
         },{
             where:{
-                id:transaction.id
+                uuid:req.params.id
             }
         });
         res.status(200).json({msg:"Transaction Updated Success"});

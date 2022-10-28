@@ -40,18 +40,6 @@ export const getProducts = async(req, res)=>{
         totalRows: totalRows,
         totalPage:totalPage
     });
-    // try {
-    //     const response = await Product.findAll({
-    //         attributes:['uuid','id','name','price','category','description','image','url'],
-    //         include:[{
-    //             model: Users,
-    //             attributes:['name','email']
-    //         }]
-    //     });
-    //     res.json(response);
-    // } catch (error) {
-    //     res.status(500).json({msg: error.message})
-    // }
 }
 
 export const getProductUser = async(req,res)=>{
